@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <title>Разработчик</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<?php
+		include "head.php"
+	?>
+
 
 <body>
 	<?php

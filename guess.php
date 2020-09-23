@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Личный сайт студента GeekBrains</title>
-	<link rel="stylesheet" href="style.css"> 
+	<?php
+		include "head.php"
+	?>
+
 	<script type="text/javascript">
 
 		var answer = parseInt(Math.random() * 100);
@@ -75,16 +75,11 @@
 		}
 
 	</script>
-</head>
-<body>
-	<header>
-		<a href="index.html">Главная</a>
-		<a href="puzzle.html">Загадки</a>
-        <a href="guess.html">Угадайка</a>
-        <a href="password.html">Пароли</a>
-		<a href="photos.html">Фотографии</a>		
-	</header>
 
+<body>
+<?php
+		include "menu.php"
+	?>
 	<h1>Игра "Угадай число"</h1>
 
 	<main>

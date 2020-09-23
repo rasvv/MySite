@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Личный сайт студента GeekBrains</title>
-	<link rel="stylesheet" href="style.css"> 
+<?php
+		include "head.php"
+	?>
 
-</head>
 <body>
 	<?php
 		include "menu.php"
@@ -21,25 +19,29 @@
 				if (isset($_GET["userAnswer1"]) &&	isset($_GET["userAnswer2"]) &&
 					isset($_GET["userAnswer3"]) &&	isset($_GET["userAnswer4"])){
 					$userAnswer = $_GET["userAnswer1"];
-					if($userAnswer = "месяц"){
+					if($userAnswer == "месяц"){
 						$score++;
 					}
 					$userAnswer = $_GET["userAnswer2"];
-					if($userAnswer = "веретено"){
+					if($userAnswer == "веретено"){
 						$score++;
 					}
 					$userAnswer = $_GET["userAnswer3"];
-					if($userAnswer = "гусь" || $userAnswer = "лебедь" || $userAnswer = "Гусь" || $userAnswer = "Лебедь" ){
+					if($userAnswer == "гусь" || $userAnswer == "лебедь" || $userAnswer == "Гусь" || $userAnswer == "Лебедь" ){
 						$score++;
 					}
 					$userAnswer = $_GET["userAnswer4"];
-					if($userAnswer = "еж" || $userAnswer = "ёж" || $userAnswer = "Еж" || $userAnswer = "Ёж"){
+					if($userAnswer == "еж" || $userAnswer == "ёж" || $userAnswer == "Еж" || $userAnswer == "Ёж"){
 						$score++;
 					}
-					echo "Вы угадали ".score." загадок";
+					echo "Вы угадали ".$score." загадок";
 				}
+				 $_SET["answer1"] = " (Месяц)";
+				// $_GET["userAnswer2"] = " (Веретено)";
+				// $_GET["userAnswer3"] = " (Гусь)";
+				// $_GET["userAnswer4"] = " (Ёж)";
 			?>
-			<form method="GET">
+			<form method="GET" method="SET">
 				<p id="answer1">Над бабкиной избушкой висит хлеба краюшка.</p>
 				<input type="text" name="userAnswer1">
 				
@@ -55,7 +57,7 @@
 				<br>
 				<input type="submit" value="Ответить" name="">
 				<br>
-				<input type="submit" value="Показать ответы" name="">
+				<input id="btnAnswers" type="submit" value="Показать ответы" name="">
 			</form>
 		</div>
 	</main>

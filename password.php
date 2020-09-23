@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Генератор паролей</title>
-<link rel="stylesheet" href="style.css"> 
+<?php
+		include "head.php"
+	?>
+
+
 <script type="text/javascript">
 
     function write(text){
@@ -32,7 +33,7 @@
         write(out);
     }   
 </script>
-</head>
+
 <body>
 	<?php
 		include "menu.php"

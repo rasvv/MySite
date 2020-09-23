@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
-<head>
-    <meta charset="utf-8" />
-    <title>Разработчик</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<?php
+		include "head.php"
+	?>
 
 <body>
 	<?php
@@ -13,12 +11,12 @@
 	?>
     <h1>Мои фотографии</h1>
     <main>
-        <img src="img/PrintBook1-200.jpg" alt="Photo">
-        <img src="img/PrintBook1-201.jpg" alt="Photo">
-        <img src="img/PrintBook1-202.jpg" alt="Photo">
-        <img src="img/PrintBook1-203.jpg" alt="Photo">
-        <img src="img/PrintBook1-204.jpg" alt="Photo">
-        <img src="img/PrintBook1-206.jpg" alt="Photo">
+        <a href="photos-full1.php"><img src="img/PrintBook1-200.jpg" alt="Photo"></a>
+        <a href="photos-full2.php"><img src="img/PrintBook1-201.jpg" alt="Photo"></a>
+        <a href="photos-full3.php"><img src="img/PrintBook1-202.jpg" alt="Photo"></a>
+        <a href="photos-full4.php"><img src="img/PrintBook1-203.jpg" alt="Photo"></a>
+        <a href="photos-full5.php"><img src="img/PrintBook1-204.jpg" alt="Photo"></a>
+        <a href="photos-full6.php"><img src="img/PrintBook1-206.jpg" alt="Photo"></a>
     </main>
 	<?php
 		include "footer.php"
