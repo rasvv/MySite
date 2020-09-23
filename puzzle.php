@@ -19,11 +19,11 @@
 				if (isset($_GET["userAnswer1"]) &&	isset($_GET["userAnswer2"]) &&
 					isset($_GET["userAnswer3"]) &&	isset($_GET["userAnswer4"])){
 					$userAnswer = $_GET["userAnswer1"];
-					if($userAnswer == "месяц"){
+					if($userAnswer == "месяц"|| $userAnswer == "Месяц"){
 						$score++;
 					}
 					$userAnswer = $_GET["userAnswer2"];
-					if($userAnswer == "веретено"){
+					if($userAnswer == "веретено" || $userAnswer == "Веретено" || $userAnswer == "Сладкая вата" || $userAnswer == "сладкая вата" ){
 						$score++;
 					}
 					$userAnswer = $_GET["userAnswer3"];
