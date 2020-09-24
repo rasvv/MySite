@@ -8,60 +8,62 @@
 	<?php
 		include "menu.php"
 	?>
+	<section>
+		<h1>Игра в загадки</h1>
 
-	<h1>Игра в загадки</h1>
+		<main>
+			<div class="box">
 
-	<main>
-		<div class="box">
-
-			<?php 
-				$score = 0;
-				if (isset($_GET["userAnswer1"]) &&	isset($_GET["userAnswer2"]) &&
-					isset($_GET["userAnswer3"]) &&	isset($_GET["userAnswer4"])){
-					$userAnswer = $_GET["userAnswer1"];
-					if($userAnswer == "месяц"|| $userAnswer == "Месяц"){
-						$score++;
+				<?php 
+					$score = 0;
+					if (isset($_GET["userAnswer1"]) &&	isset($_GET["userAnswer2"]) &&
+						isset($_GET["userAnswer3"]) &&	isset($_GET["userAnswer4"])){
+						$userAnswer = $_GET["userAnswer1"];
+						if($userAnswer == "месяц"|| $userAnswer == "Месяц"){
+							$score++;
+						}
+						$userAnswer = $_GET["userAnswer2"];
+						if($userAnswer == "веретено" || $userAnswer == "Веретено" || $userAnswer == "Сладкая вата" || $userAnswer == "сладкая вата" ){
+							$score++;
+						}
+						$userAnswer = $_GET["userAnswer3"];
+						if($userAnswer == "гусь" || $userAnswer == "лебедь" || $userAnswer == "Гусь" || $userAnswer == "Лебедь" ){
+							$score++;
+						}
+						$userAnswer = $_GET["userAnswer4"];
+						if($userAnswer == "еж" || $userAnswer == "ёж" || $userAnswer == "Еж" || $userAnswer == "Ёж"){
+							$score++;
+						}
+						echo "Вы угадали ".$score." загадок";
 					}
-					$userAnswer = $_GET["userAnswer2"];
-					if($userAnswer == "веретено" || $userAnswer == "Веретено" || $userAnswer == "Сладкая вата" || $userAnswer == "сладкая вата" ){
-						$score++;
-					}
-					$userAnswer = $_GET["userAnswer3"];
-					if($userAnswer == "гусь" || $userAnswer == "лебедь" || $userAnswer == "Гусь" || $userAnswer == "Лебедь" ){
-						$score++;
-					}
-					$userAnswer = $_GET["userAnswer4"];
-					if($userAnswer == "еж" || $userAnswer == "ёж" || $userAnswer == "Еж" || $userAnswer == "Ёж"){
-						$score++;
-					}
-					echo "Вы угадали ".$score." загадок";
-				}
-				 $_SET["answer1"] = " (Месяц)";
-				// $_GET["userAnswer2"] = " (Веретено)";
-				// $_GET["userAnswer3"] = " (Гусь)";
-				// $_GET["userAnswer4"] = " (Ёж)";
-			?>
-			<form method="GET" method="SET">
-				<p id="answer1">Над бабкиной избушкой висит хлеба краюшка.</p>
-				<input type="text" name="userAnswer1">
-				
-				<p id="answer2">Чем больше верчусь, кручусь, тем больше толстею.</p>
-				<input type="text" name="userAnswer2">
+					$_SET["answer1"] = " (Месяц)";
+					// $_GET["userAnswer2"] = " (Веретено)";
+					// $_GET["userAnswer3"] = " (Гусь)";
+					// $_GET["userAnswer4"] = " (Ёж)";
+				?>
+				<form method="GET" method="SET">
+					<p id="answer1">Над бабкиной избушкой висит хлеба краюшка.</p>
+					<input type="text" name="userAnswer1">
+					
+					<p id="answer2">Чем больше верчусь, кручусь, тем больше толстею.</p>
+					<input type="text" name="userAnswer2">
 
-				<p id="answer3">Бел, как снег, надут, как мех, на лопатах ходит.</p>
-				<input type="text" name="userAnswer3">
+					<p id="answer3">Бел, как снег, надут, как мех, на лопатах ходит.</p>
+					<input type="text" name="userAnswer3">
 
-				<p id="answer4">Не портной, одежду никому не шью, а всю жизнь с иголками хожу.</p>
-				<input type="text" name="userAnswer4">
+					<p id="answer4">Не портной, одежду никому не шью, а всю жизнь с иголками хожу.</p>
+					<input type="text" name="userAnswer4">
 
-				<br>
-				<input type="submit" value="Ответить" name="">
-				<br>
-				<input id="btnAnswers" type="submit" value="Показать ответы" name="">
-			</form>
-		</div>
-	</main>
+					<br>
+					<!-- <input type="submit" value="Ответить" name=""> -->
+					<button id="button">Проверить</button>						
+					<br>
+					<input id="btnAnswers" type="submit" value="Показать ответы" name="">
 
+				</form>
+			</div>
+		</main>
+	</section>
 	<?php
 		include "footer.php"
 	?>

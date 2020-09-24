@@ -38,20 +38,20 @@
 	<?php
 		include "menu.php"
 	?>
+	<section>
+        <h1>Генератор паролей</h1>
 
-    <h1>Генератор паролей</h1>
+        <main>
+            <div class="box">
 
-    <main>
-        <div class="box">
-
-            <p id="info">Введите длину пароля</p>
-            <input type="text" id="userAnswer">
-            <p id="pass"></p>
-            <br>
-            <a href="#" onClick="generate();" id="button">Начать</a>             
-        </div>
-    </main>
-
+                <p id="info">Введите длину пароля</p>
+                <input type="text" id="userAnswer">
+                <p id="pass"></p>
+                <br>
+                <a href="#" onClick="generate();" id="button">Начать</a>             
+            </div>
+        </main>
+    </section>
 	<?php
 		include "footer.php"
 	?>

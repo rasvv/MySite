@@ -77,40 +77,42 @@
 	</script>
 
 <body>
-<?php
+	<?php
 		include "menu.php"
 	?>
-	<h1>Игра "Угадай число"</h1>
+	<section>
+		<h1>Игра "Угадай число"</h1>
 
-	<main>
-		<div class="box" id="box1">
-			<p id="infoPrompt">Давайте сначала познакомимся</p>
-			<p id="infouser1">Игрок №1 представьтесь</p>
-			<input type="text" id="user1">
+		<main>
+			<div class="box" id="box1">
+				<p id="infoPrompt">Давайте сначала познакомимся</p>
+				<p id="infouser1">Игрок №1 представьтесь</p>
+				<input type="text" id="user1">
 
-			<p id="infouser2">Игрок №2 представьтесь</p>
-			<input type="text" id="user2">
+				<p id="infouser2">Игрок №2 представьтесь</p>
+				<input type="text" id="user2">
 
-			<p id="infotxtTryCount">Введите количество попыток</p>
-			<input type="text" id="txtTryCount">
-			<br>
-			
-			<a href="#" onClick="begining();" id="buttonBeg">Начать</a>		
-		</div>
-		<div class="box" id="box2">
-			<p id="info">Угадайте число от 0 до 100</p>
-			<input type="text" id="userAnswer">
-			<br>
-			<a href="#" onClick="guess();" id="button">Проверить</a>				
-		</div>
-		<div class="box" id="box3">
-			<p id="info3">Угадайте число от 0 до 100</p>
-			<a href="#" onClick="begining();" id="button">Еще раз</a>				
-		</div>
-	</main>
+				<p id="infotxtTryCount">Введите количество попыток</p>
+				<input type="text" id="txtTryCount">
+				<br>
+				
+				<a href="#" onClick="begining();" id="buttonBeg">Начать</a>		
+			</div>
+			<div class="box" id="box2">
+				<p id="info">Угадайте число от 0 до 100</p>
+				<input type="text" id="userAnswer">
+				<br>
+				<a href="#" onClick="guess();" id="button">Проверить</a>				
+			</div>
+			<div class="box" id="box3">
+				<p id="info3">Угадайте число от 0 до 100</p>
+				<a href="#" onClick="begining();" id="button">Еще раз</a>				
+			</div>
+		</main>
+	</section>
 
-	<footer>
-		Все права защищены&copy; <img id="Logo" src="img/Logo.png">
-	</footer>
+	<?php
+		include "footer.php"
+	?>
 </body>
 </html>
