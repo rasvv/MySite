@@ -10,7 +10,7 @@
 	<?php
 	    include "menu.php"
     ?>
-	<section>    
+	<section class="main">   
         <h1>Хоккей</h1>
         <main>
 

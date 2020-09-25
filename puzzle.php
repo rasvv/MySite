@@ -8,7 +8,7 @@
 	<?php
 		include "menu.php"
 	?>
-	<section>
+	<section class="main">
 		<h1>Игра в загадки</h1>
 
 		<main>

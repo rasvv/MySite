@@ -80,7 +80,7 @@
 	<?php
 		include "menu.php"
 	?>
-	<section>
+	<section class="main">
 		<h1>Игра "Угадай число"</h1>
 
 		<main>

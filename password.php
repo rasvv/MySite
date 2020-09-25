@@ -38,7 +38,7 @@
 	<?php
 		include "menu.php"
 	?>
-	<section>
+	<section class="main">
         <h1>Генератор паролей</h1>
 
         <main>
