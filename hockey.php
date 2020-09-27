@@ -14,9 +14,9 @@
         <h1>Хоккей</h1>
         <main>
 
-            <img src="img/hockey1.jpg" alt="Photo">
-            <img src="img/hockey2.jpg" alt="Photo">
-            <img src="img/hockey3.jpg" alt="Photo">
+            <div class="photo photo1"><img src="img/Hockey/1.jpg" alt=""></div>
+            <div class="photo photo2"><img src="img/Hockey/2.jpg" alt=""></div>
+            <div class="photo photo3"><img src="img/Hockey/3.jpg" alt=""></div>
         </main>
     </section>
     <?php

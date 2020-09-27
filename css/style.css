@@ -58,9 +58,38 @@ main img {
     max-width: 385px;
 }
 
+.photo{
+    display: grid;
+    justify-content: center;
+}
+
 .photo img{
     max-height: 265px;
-    border: 1px solid red;
+
+}
+
+.photo img:hover{
+    /* max-height: 265px; */
+    /* border: 1px solid red; */
+}
+
+a.photo{
+    display: grid;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+a.photo img{
+    margin-bottom: 20px;
+    width: 100%;
+    max-height: 700px;
+}
+
+.photos-main{
+    /* display: grid; */
+    /* height: 500px; */
+    /* grid-template-columns: repeat(auto-fit, 500px); */
 }
 
 .photos{
@@ -69,7 +98,30 @@ main img {
     justify-content: space-between;
     grid-gap: 30px;
     padding: 30px;
+    align-content: center;
+    /* justify-content: center; */
 }
+
+.fullphoto1 img{
+    width: 100%;
+} 
+
+.fullphoto1{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    transition: all .5s;
+    z-index: 7;
+}
+
+.fullphoto1.active{
+    left: 0;
+}
+
+
 
 .fullphoto{
     display: flex;
@@ -81,6 +133,33 @@ main img {
     max-height: calc(100vh - 240px);
     padding: 0;
     margin: 0 0 10px;
+}
+
+.full-photo{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    transition: all .5s;
+    z-index: 7;
+}
+
+.full-photo.active{
+    left: 0;
+}
+
+.container-menu{
+    position: relative;
+}
+
+.close-btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 31px;
+    cursor: pointer;
 }
 
 h1 {
