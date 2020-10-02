@@ -18,16 +18,14 @@
             <a class="photo" href="photos-full6.php"><img src="img/PrintBook1-206.jpg" alt="Photo"></a>
         </section> -->
         <section class="photos">
-          <div class="photo photo1"><img src="img/Other/1.jpg" alt=""></div>
-          <div class="photo photo2"><img src="img/Other/2.jpg" alt=""></div>
-          <div class="photo photo3"><img src="img/Other/3.jpg" alt=""></div>
-          <div class="photo photo4"><img src="img/Other/4.jpg" alt=""></div>
-          <div class="photo photo5"><img src="img/Other/5.jpg" alt=""></div>
-          <div class="photo photo6"><img src="img/Other/6.jpg" alt=""></div>
-          <div class="photo photo7"><img src="img/Other/7.jpg" alt=""></div>
+          <div class="photo photo1"><img src="img/Other/1.jpg" class="minimized" alt=""></div>
+          <div class="photo photo2"><img src="img/Other/2.jpg" class="minimized" alt=""></div>
+          <div class="photo photo3"><img src="img/Other/3.jpg" class="minimized" alt=""></div>
+          <div class="photo photo4"><img src="img/Other/4.jpg" class="minimized" alt=""></div>
+          <div class="photo photo5"><img src="img/Other/5.jpg" class="minimized" alt=""></div>
+          <div class="photo photo6"><img src="img/Other/6.jpg" class="minimized" alt=""></div>
+          <div class="photo photo7"><img src="img/Other/7.jpg" class="minimized" alt=""></div>
         </section>
-        <div class="fullphoto1"><img src="img/PrintBook1-200.jpg" alt=""></div>
-
     </section>
 
     <?php

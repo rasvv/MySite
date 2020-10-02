@@ -9,7 +9,7 @@
 	?>
 	<section class="main">
 
-		<h1>Личный сайт студента GeekBrains</h1>
+		<h1>Обо мне</h1>
 
 		<main>
 		<img id="avatar" src="img/Avatar.jpg">
