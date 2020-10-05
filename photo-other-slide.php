@@ -8,7 +8,9 @@
 		include "menu.php"
     ?>   
 
+    <a class="a_to_slide" href="photo-other.php">Галерея</a>
     <section class="slider-top">
+
         <div class="slider">
             <div class="slider__item" style="background-image: url(img/Other/Full/1.jpg);"></div>
             <div class="slider__item" style="background-image: url(img/Other/Full/2.jpg);"></div>
