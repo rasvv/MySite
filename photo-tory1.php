@@ -8,10 +8,11 @@
 		include "menu.php"
     ?>   
     <section class="main photos-main">
-        <h1>Вика в студии</h1>
-
+        <h1>
+          Вика в студии
+          <a class="a_to_slide" href="photo-tory1-slide.php">Слайды</a>          
+        </h1>
         <section class="photos">
-          <a class="a_to_slide" href="photo-tory1-slide.php">Слайды</a>
           <div class="photo photo1"><img src="img/Tory/Tory1/1.jpg" class="minimized" alt=""></div>
           <div class="photo photo2"><img src="img/Tory/Tory1/2.jpg" class="minimized" alt=""></div>
           <div class="photo photo3"><img src="img/Tory/Tory1/3.jpg" class="minimized" alt=""></div>

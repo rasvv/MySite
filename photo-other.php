@@ -8,7 +8,10 @@
 		include "menu.php"
     ?>   
     <section class="main photos-main">
-        <h1>Разное</h1>
+        <h1>
+          Разное
+          <a class="a_to_slide" href="photo-other-slide.php">Слайды</a>
+        </h1>
         <!-- <section class="photos">
             <a class="photo" href="photos-full1.php"><img src="img/PrintBook1-200.jpg" alt="Photo"></a>
             <a class="photo" href="photos-full2.php"><img src="img/PrintBook1-201.jpg" alt="Photo"></a>
@@ -18,7 +21,6 @@
             <a class="photo" href="photos-full6.php"><img src="img/PrintBook1-206.jpg" alt="Photo"></a>
         </section> -->
         <section class="photos">
-          <a class="a_to_slide" href="photo-other-slide.php">Слайды</a>
           <div class="photo photo1"><img src="img/Other/1.jpg" class="minimized" alt=""></div>
           <div class="photo photo2"><img src="img/Other/2.jpg" class="minimized" alt=""></div>
           <div class="photo photo3"><img src="img/Other/3.jpg" class="minimized" alt=""></div>
