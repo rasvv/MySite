@@ -138,14 +138,24 @@ a.photo img{
 
 .photos{
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, 385px); */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: repeat(auto-fit, 385px);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     justify-content: space-between;
     grid-gap: 30px;
     padding: 30px;
     align-content: center;
     /* justify-content: center; */
 }
+
+.a_to_slide{
+    grid-column: 1 / -1;
+    text-align: right;
+}
+
+/* .a_to_slide a{
+justify-content: right;
+} */
 
 .fullphoto1 img{
     width: 100%;

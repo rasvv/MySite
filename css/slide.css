@@ -1,12 +1,4 @@
   .slider-top{
-<<<<<<< HEAD
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 100vw;
-    /* height: 85vh; */
-    max-width: 1800px;
-    /* position: relative; */
-=======
       /* display: grid; */
       /* grid-template-columns: 1fr; */
       /* grid-template-rows: 100vw; */
@@ -14,7 +6,6 @@
       height: calc(100vh - 140px);
       width: 100vw;
         /* position: relative; */
->>>>>>> 7cc3768e1ba133776b556aeb8db40b09dd8c740e
 
   }
 
@@ -54,11 +45,7 @@
     margin: 0 auto 0;
     position: relative;
     z-index: 0;
-<<<<<<< HEAD
-    /* max-width: 2200px; */
-=======
     width: 100%;
->>>>>>> 7cc3768e1ba133776b556aeb8db40b09dd8c740e
     /* width: 100vw; */
     display: flex;
     justify-content: center;
