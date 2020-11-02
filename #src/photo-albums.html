@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('_head.html')
+@@include('_head.html',{
+"title":"Главная"
+})
+
 
 <body>
-	@@include('_menu.html')
-	<section class="main">
-		<h1>Фотографии</h1>
-		<section class="photos photos-main">
-			<a class="photo" href="photo-tory1.html"><img src="img/Tory/Tory1/1.jpg" alt="Photo">Вика в студии</a>
-			<a class="photo" href="photo-tory2.html"><img src="img/Tory/Tory2/1.jpg" alt="Photo">Вика</a>
-			<a class="photo" href="photo-dasha.html"><img src="img/Dasha/1.jpg" alt="Photo">Даша</a>
-			<a class="photo" href="photo-other.html"><img src="img/Other/6.jpg" alt="Photo">Разное</a>
-		</section>
-	</section>
-
-	@@include('_footer.html')
-
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="main">
+			<div class="container">
+				<h1>Фотографии</h1>
+				<section class="photos photos-main">
+					<a class="photo" href="photo-tory1.html"><img src="img/Tory/Tory1/1.jpg" alt="Photo">Вика в студии</a>
+					<a class="photo" href="photo-tory2.html"><img src="img/Tory/Tory2/1.jpg" alt="Photo">Вика</a>
+					<a class="photo" href="photo-dasha.html"><img src="img/Dasha/1.jpg" alt="Photo">Даша</a>
+					<a class="photo" href="photo-other.html"><img src="img/Other/6.jpg" alt="Photo">Разное</a>
+				</section>
+				</section>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
 </body>
 
 </html>
