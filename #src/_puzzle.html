@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
-@@include('_head.html')
+<h2>Игра в загадки</h2>
 
-<body>
-	@@include('_menu.html')
-	<section class="main">
-		<h1>Игра в загадки</h1>
+<div class="main__block">
+	<div class="box">
 
-		<main>
-			<div class="box">
-
-				<?php 
+		<!-- <?php 
 					$score = 0;
 					if (isset($_GET["userAnswer1"]) &&	isset($_GET["userAnswer2"]) &&
 						isset($_GET["userAnswer3"]) &&	isset($_GET["userAnswer4"])){
@@ -36,31 +29,26 @@
 					// $_GET["userAnswer2"] = " (Веретено)";
 					// $_GET["userAnswer3"] = " (Гусь)";
 					// $_GET["userAnswer4"] = " (Ёж)";
-				?>
-				<form method="GET" method="SET">
-					<p id="answer1">Над бабкиной избушкой висит хлеба краюшка.</p>
-					<input type="text" name="userAnswer1">
+				?> -->
+		<form method="GET" method="SET">
+			<p id="answer1">Над бабкиной избушкой висит хлеба краюшка.</p>
+			<input type="text" name="userAnswer1">
 
-					<p id="answer2">Чем больше верчусь, кручусь, тем больше толстею.</p>
-					<input type="text" name="userAnswer2">
+			<p id="answer2">Чем больше верчусь, кручусь, тем больше толстею.</p>
+			<input type="text" name="userAnswer2">
 
-					<p id="answer3">Бел, как снег, надут, как мех, на лопатах ходит.</p>
-					<input type="text" name="userAnswer3">
+			<p id="answer3">Бел, как снег, надут, как мех, на лопатах ходит.</p>
+			<input type="text" name="userAnswer3">
 
-					<p id="answer4">Не портной, одежду никому не шью, а всю жизнь с иголками хожу.</p>
-					<input type="text" name="userAnswer4">
+			<p id="answer4">Не портной, одежду никому не шью, а всю жизнь с иголками хожу.</p>
+			<input type="text" name="userAnswer4">
 
-					<br>
-					<!-- <input type="submit" value="Ответить" name=""> -->
-					<button id="button">Проверить</button>
-					<br>
-					<input id="btnAnswers" type="submit" value="Показать ответы" name="">
+			<br>
+			<!-- <input type="submit" value="Ответить" name=""> -->
+			<button id="button">Проверить</button>
+			<br>
+			<input id="btnAnswers" type="submit" value="Показать ответы" name="">
 
-				</form>
-			</div>
-		</main>
-	</section>
-	@@include('_footer.html')
-</body>
-
-</html>
+		</form>
+	</div>
+</div>

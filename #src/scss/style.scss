@@ -16,6 +16,10 @@
 
 @import "gallery.scss";
 
+@import "apps.scss";
+
+@import "slide.scss";
+
 body {
 	background-color: #f7f7f7;
 	font-family: "Roboto", sans-serif;
@@ -27,7 +31,7 @@ body {
 	grid-template-rows: 80px 1fr 90px;
 }
 .container {
-	max-width: 1300px;
+	width: 1300px;
 	height: 100%;
 	margin: 0 auto;
 	align-items: center;
@@ -38,12 +42,20 @@ h1 {
 	color: #2e353d;
 	font-size: 40px;
 	font-weight: 300;
-	margin: 40px 0;
+	padding: 40px 0;
+}
+
+h2 {
+	text-align: center;
+	color: #2e353d;
+	font-size: 32px;
+	font-weight: 400;
+	padding: 30px 0;
 }
 
 h3 {
 	color: #242424;
-	font-size: 35px;
+	font-size: 28px;
 	font-weight: 300;
 	text-align: left;
 	margin-left: 41px;
@@ -54,11 +66,6 @@ h5 {
 	color: #242424;
 	font-size: 24px;
 	text-align: left;
-}
-
-.apps {
-	display: grid;
-	grid-template-columns: 1fr 4fr;
 }
 
 .header {
@@ -85,7 +92,7 @@ h5 {
 }
 
 .main {
-	// margin: 0 auto;
+	margin: 0 auto;
 	&__columns {
 		display: grid;
 		grid-template-columns: 385px 1fr;
@@ -102,7 +109,7 @@ h5 {
 		max-width: 850px;
 		background-color: #ffffff;
 		/* float: right; */
-		padding: 30px 50px;
+		padding: 30px;
 		margin: 0 auto;
 		/* margin-bottom: 100px; */
 		& a {

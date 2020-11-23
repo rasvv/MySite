@@ -2,33 +2,36 @@
 <!-- <iframe src="head.html">
 	Ваш браузер не поддерживает плавающие фреймы!
 </iframe> -->
-@@include('_head.html')
+@@include('_head.html',{})
 
 
 <body>
+
 	<div class="wrapper">
 
-		@@include('_header.html')
+		@@include('_header.html',{})
 
 		<main class="main">
 			<div class="container">
-
+				<h1>Программы</h1>
 				<div class="apps">
 					<aside class="sidebar">
-						<ul class="apps__list li apps__link">Игра "Угадайка"</ul>
-						<ul class="apps__list li apps__link">Загадки</ul>
-						<ul class="apps__list li apps__link">Генератор паролей</ul>
+						<ul>
+							<li class="apps__link">Игра "Угадайка"</li>
+							<li class="apps__link">Загадки</li>
+							<li class="apps__link active">Генератор паролей</li>
+						</ul>
 					</aside>
 
 					<div class="apps__box">
-						<h1>Программы</h1>
-						<div class="apps__puzzle">
+
+						<div class="apps__block apps__puzzle">
 							@@include('_puzzle.html')
 						</div>
-						<div class="apps__guess">
+						<div class="apps__block apps__guess">
 							@@include('_guess.html')
 						</div>
-						<div class="apps__password">
+						<div class="apps__block apps__password visible">
 							@@include('_password.html')
 						</div>
 					</div>
@@ -36,7 +39,7 @@
 			</div>
 		</main>
 
-		@@include('_footer.html')
+		@@include('_footer.html',{})
 
 	</div>
 </body>

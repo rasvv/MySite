@@ -1,0 +1,89 @@
+.apps {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	height: calc(100% - 130px);
+	&__link {
+	}
+
+	&__box {
+		width: 100%;
+	}
+
+	&__puzzle {
+	}
+
+	&__guess {
+	}
+
+	&__password {
+	}
+	&__block {
+		visibility: hidden;
+		position: absolute;
+	}
+	.visible {
+		position: static;
+		visibility: visible;
+	}
+}
+
+.sidebar {
+	background-color: aqua;
+	border-radius: 10px;
+
+	& ul {
+		color: #fff;
+		line-height: 4;
+		text-transform: uppercase;
+		& li {
+			border: 1px solid #555;
+			border-radius: 10px 0 0 10px;
+			border-right: none;
+			padding-left: 15px;
+		}
+	}
+	.active {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	}
+}
+
+.main__block {
+	padding-left: 20px;
+}
+
+#box2 {
+	display: none;
+}
+
+#box3 {
+	display: none;
+}
+
+input {
+	border: 1px solid #a0a0a0;
+	background-color: #f5f5f5;
+	width: 400px;
+	height: 34px;
+	padding-left: 10px;
+	font-size: 20px;
+	font-weight: 100;
+	margin-bottom: 12px;
+}
+
+#button {
+	display: block;
+	float: left;
+	background-color: #8cbbd3;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 0 0 30px;
+	padding: 11px 51px;
+	border: none;
+}
+
+#btnAnswers {
+	display: none;
+}
