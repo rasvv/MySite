@@ -28,62 +28,6 @@ a.photo img {
 	max-height: 700px;
 }
 
-#magnify {
-	display: none;
-	/* position: absolute; upd: 24.10.2016 */
-	position: fixed;
-
-	width: 100vw;
-	height: 100vh;
-	z-index: 9999;
-}
-#magnify img {
-	// position: absolute;
-	// margin: 0 auto;
-	height: 90vh;
-}
-/* затемняющий фон */
-#overlay {
-	display: none;
-	background: #000;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0.5;
-	z-index: 9990;
-}
-/* кнопка закрытия */
-#close-popup {
-	width: 30px;
-	height: 30px;
-	background: #ffffff;
-	border: 1px solid #afafaf;
-	border-radius: 15px;
-	cursor: pointer;
-	position: absolute;
-	top: 15px;
-	right: 15px;
-}
-#close-popup i {
-	width: 30px;
-	height: 30px;
-	background: url(https://codernote.ru/files/cross.png) no-repeat center center;
-	background-size: 16px 16px;
-	display: block;
-}
-@keyframes rota {
-	25% {
-		transform: rotate(360deg);
-	}
-}
-#close-popup:hover {
-	animation: rota 4s infinite normal;
-	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
-}
-
 .photos {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 310px);
@@ -114,10 +58,6 @@ a.photo img {
 justify-content: right;
 } */
 
-.fullphoto1 img {
-	width: 100%;
-}
-
 .fullphoto1 {
 	background-color: #000;
 	position: absolute;
@@ -127,22 +67,26 @@ justify-content: right;
 	width: 100%;
 	transition: all 0.5s;
 	z-index: 7;
-}
 
-.fullphoto1.active {
-	left: 0;
+	& img {
+		width: 100%;
+	}
+
+	&.active {
+		left: 0;
+	}
 }
 
 .fullphoto {
 	display: flex;
 	flex-direction: column;
-}
 
-.fullphoto img {
-	max-width: 100vw;
-	max-height: calc(100vh - 240px);
-	padding: 0;
-	margin: 0 0 10px;
+	& img {
+		max-width: 100vw;
+		max-height: calc(100vh - 240px);
+		padding: 0;
+		margin: 0 0 10px;
+	}
 }
 
 .full-photo {
@@ -153,13 +97,13 @@ justify-content: right;
 	width: 100%;
 	transition: all 0.5s;
 	z-index: 7;
+
+	&.active {
+		left: 0;
+	}
 }
 
-.full-photo.active {
-	left: 0;
-}
-
-.container-menu {
+.gallery__item .container-menu {
 	position: relative;
 }
 
