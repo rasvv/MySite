@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('_head.html')
+@@include('_head.html',{})
 
 <body>
-	@@include('_header.html',{})
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="main">
+			<!-- <div class="container"> -->
 
-	<a class="gallery__btn-to-slide" href="photo-other.html">Галерея</a>
-	<section class="slider-top">
+			<div class="main__body">
 
-		<div class="slider">
-			<div class="slider__item" style="background-image: url(img/Other/Full/1.jpg);"></div>
-			<div class="slider__item" style="background-image: url(img/Other/Full/2.jpg);"></div>
-			<div class="slider__item" style="background-image: url(img/Other/Full/3.jpg);"></div>
-			<div class="slider__item" style="background-image: url(img/Other/Full/4.jpg);"></div>
-			<div class="slider__item" style="background-image: url(img/Other/Full/5.jpg);"></div>
-			<div class="slider__item" style="background-image: url(img/Other/Full/6.jpg);"></div>
-			<div class="slider__item" style="background-image: url(img/Other/Full/7.jpg);"></div>
-		</div>
-	</section>
+				<a class="gallery__btn-to-slide" href="photo-other.html">Галерея</a>
+				<section class="slider-top">
 
-	@@include('_footer.html')
-	@@include('_scripts.html')
+					<div class="slider">
+						<div class="slider__item"><img src="img/Other/Full/1.jpg"></div>
+						<div class="slider__item"><img src="img/Other/Full/2.jpg"></div>
+						<div class="slider__item"><img src="img/Other/Full/3.jpg"></div>
+						<div class="slider__item"><img src="img/Other/Full/4.jpg"></div>
+						<div class="slider__item"><img src="img/Other/Full/5.jpg"></div>
+						<div class="slider__item"><img src="img/Other/Full/6.jpg"></div>
+						<div class="slider__item"><img src="img/Other/Full/7.jpg"></div>
+					</div>
+				</section>
+
+			</div>
+			<!-- </div> -->
+		</main>
+
+		@@include('_footer.html',{})
+
+	</div>
+	@@include('_scripts.html',{})
 </body>
 
 </html>

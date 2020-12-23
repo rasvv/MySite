@@ -12,7 +12,9 @@ a:hover {
 }
 
 .photo img:hover {
-	border: 1px solid red;
+	// border: 1px solid red;
+	box-shadow: 0 0 30px rgba(150, 150, 150, 0.8);
+	transition: all ease 500ms;
 }
 
 a.photo {
@@ -101,10 +103,6 @@ justify-content: right;
 	&.active {
 		left: 0;
 	}
-}
-
-.gallery__item .container-menu {
-	position: relative;
 }
 
 .close-btn {

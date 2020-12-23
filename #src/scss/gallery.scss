@@ -8,6 +8,10 @@
 		display: grid;
 		gap: 10px;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+		& .container-menu {
+			position: relative;
+		}
 	}
 
 	&__btn-to-slide {
@@ -29,6 +33,9 @@
 	&__item {
 		position: relative;
 		padding-bottom: 85%;
+		&:nth-child(1) {
+			align-items: start;
+		}
 
 		& img {
 			position: absolute;
@@ -38,9 +45,15 @@
 			height: 100%;
 			object-fit: cover;
 		}
+
 		&-big {
 			grid-column: span 2;
 			grid-row: span 2;
+		}
+
+		&:nth-child(1) img {
+			object-fit: none;
+			align-self: start;
 		}
 	}
 }

@@ -15,23 +15,23 @@
 			<div class="container">
 				<h1>Программы</h1>
 				<div class="apps">
-					<aside class="sidebar">
-						<ul>
-							<li class="apps__link">Игра "Угадайка"</li>
-							<li class="apps__link">Загадки</li>
-							<li class="apps__link active">Генератор паролей</li>
-						</ul>
-					</aside>
+					<div class="tabs">
+						<nav class="tabs__items">
+							<a href="#_guess" class="tabs__item tab__guess active">Игра "Угадайка"</a>
+							<a href="#_puzzle" class="tabs__item tab__puzzle">Загадки</a>
+							<a href="#_password" class="tabs__item tab__password">Генератор паролей</a>
+						</nav>
+					</div>
 
-					<div class="apps__box">
+					<div class="tabs__body">
 
-						<div class="apps__block apps__puzzle">
+						<div id="_puzzle" class="tabs__block tabs__puzzle">
 							@@include('_puzzle.html')
 						</div>
-						<div class="apps__block apps__guess">
+						<div id="_guess" class="tabs__block tabs__guess">
 							@@include('_guess.html')
 						</div>
-						<div class="apps__block apps__password visible">
+						<div id="_password" class="tabs__block tabs__password">
 							@@include('_password.html')
 						</div>
 					</div>
@@ -42,6 +42,7 @@
 		@@include('_footer.html',{})
 
 	</div>
+	@@include('_scripts.html',{})
 </body>
 
 </html>
