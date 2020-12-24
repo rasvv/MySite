@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
-@@include('_head.html')
-
+<html lang="ru">
+@@include('_head.html',{})
 
 <body>
-	@@include('_header.html',{})
-	<section class="main">
-		<h1>Хоккей</h1>
-		<main>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="main">
+			<!-- <div class="container"> -->
 
-			<div class="photo photo1"><img src="img/Hockey/1.jpg" class="minimized" alt=""></div>
-			<div class="photo photo2"><img src="img/Hockey/2.jpg" class="minimized" alt=""></div>
-			<div class="photo photo3"><img src="img/Hockey/3.jpg" class="minimized" alt=""></div>
+			<div class="main__body">
+
+				<section class="slider-top">
+
+					<div class="slider">
+						<div class="slider__item"><img src="img/Hockey/1.jpg" alt=""></div>
+						<div class="slider__item"><img src="img/Hockey/2.jpg" alt=""></div>
+						<div class="slider__item"><img src="img/Hockey/3.jpg" alt=""></div>
+					</div>
+				</section>
+			</div>
+			<!-- </div> -->
 		</main>
-	</section>
-	@@include('_footer.html')
 
-	@@include('_scripts.html')
+		@@include('_footer.html',{})
+
+	</div>
+	@@include('_scripts.html',{})
 </body>
 
 </html>

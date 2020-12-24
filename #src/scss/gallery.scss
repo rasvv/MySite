@@ -37,6 +37,10 @@
 			align-items: start;
 		}
 
+		&.top img {
+			object-position: top;
+		}
+
 		& img {
 			position: absolute;
 			top: 0;

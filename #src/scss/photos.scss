@@ -17,6 +17,13 @@ a:hover {
 	transition: all ease 500ms;
 }
 
+.photo__title {
+	position: absolute;
+	left: calc(50% - 100px);
+	top: 0px;
+	z-index: 2;
+}
+
 a.photo {
 	display: grid;
 	text-decoration: none;
@@ -33,11 +40,19 @@ a.photo img {
 .photos {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 310px);
+	height: 100%;
 	justify-content: space-between;
 	grid-gap: 20px;
 	padding-bottom: 20px;
+	align-items: center;
 	align-content: center;
 	/* justify-content: center; */
+	&__container {
+		position: relative;
+		margin: auto auto;
+	}
+	&__main {
+	}
 }
 
 .a_to_slide {

@@ -1,4 +1,4 @@
-{/* <script type="text/javascript">
+ <script type="text/javascript">
 
 	function write(text) {
 		document.getElementById("pass").innerHTML = text;
@@ -25,4 +25,4 @@
 		}
 		write(out);
 	}
-</script> */}
+</script> 
