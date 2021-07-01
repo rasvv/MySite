@@ -1,0 +1,37 @@
+.sites
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  grid-gap: 20px
+  justify-content: center
+  flex-wrap: wrap
+  color: #fff
+  padding: 20px
+
+  & h2 
+    color: #fff
+    margin: 0
+
+
+.siteblock 
+  height: 600px
+  width: 300px
+  display: grid
+  grid-template-rows: (1fr 3fr 2fr)
+  justify-content: center
+  align-items: center
+  background-color: #333  
+  // margin: 15px
+  padding: 10px
+  transition: 0.3s
+  border: 3px solid #bbb
+  border-radius: 20px
+
+  &:hover
+    transform: scale(1.025)
+
+  &__img 
+    width: 100%
+
+  &__description
+    text-align: center
+    color: #fff

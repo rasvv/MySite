@@ -10,6 +10,8 @@
 
 @import "slide.sass"
 
+@import "sites.sass"
+
 body
 	background-color: #f7f7f7
 	font-family: "Roboto", sans-serif
@@ -20,7 +22,7 @@ body
 	grid-template-rows: 80px 1fr 90px
 
 .container
-	width: 1300px
+	max-width: 1300px
 	height: 100%
 	margin: 0 auto
 	align-items: center
@@ -57,7 +59,7 @@ h5
 	background-color: #dfdfdf
 	&__menu
 		display: flex
-		// grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		justify-content: space-around
 
 		font-size: 20px
@@ -73,7 +75,7 @@ h5
 				font-weight: 400
 
 .main
-	margin: 0 auto
+	// margin: 0 auto
 	&__columns
 		display: grid
 		grid-template-columns: 385px 1fr
