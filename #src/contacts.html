@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- <iframe src="head.html">
+	Ваш браузер не поддерживает плавающие фреймы!
+</iframe> -->
+@@include('_head.html',{
+"title":"Главная"
+})
+
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+
+		<main class="main">
+			<div class="container">
+
+				<div class="main__body">
+
+					<h1>Обо мне</h1>
+					<div class="main__columns">
+						<div class="main__img">
+							<img class="main__avatar" src="img/Avatar.jpg">
+						</div>
+						<div class="main__box box-text">
+							<!-- <p>
+								Добрый день. Меня зовут <i><b>Валерий Рассолов</b></i>.
+							</p> -->
+							<p>
+								Если вам нужен сайт или интернет-магазин - обращайтесь
+							</p>
+							<div class="mail contact"><a href="mailto:rasvv@mail.ru"><i class="far fa-envelope mar"></i>rasvv@mail.ru</a></div>
+							<div class="phone1 contact"><a href="tel:+7(910)-310-24-90"><i class="fas fa-mobile-alt mar"></i>+7(910)-310-24-90</a></div>
+							<div class="phone2 contact"><a href="tel:+7(903)-870-38-38"><i class="fas fa-mobile-alt mar"></i>+7(903)-870-38-38</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include('_footer.html',{})
+
+	</div>
+</body>
+
+</html>

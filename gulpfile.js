@@ -203,7 +203,7 @@ function clean(params) {
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-task('deploy', () => src('./dist/**/*').pipe(ghPages()));
+task('deploy', () => src('./MySite/MySite/**/*').pipe(ghPages()));
 
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;

@@ -13,14 +13,6 @@ $(function () {
 	});
 });
 
-// 	$('.photo').on('click', function () {
-// 		$('.fullphoto').addClass('active');
-// 	})
-
-// 	$('.photo1').on('click', function () {
-// 		$('.fullphoto').removeClass('active');
-// 	})
-
 
 $(function () {
 	$('.tab__guess').on('click', function () {

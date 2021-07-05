@@ -12,6 +12,8 @@
 
 @import "sites.sass"
 
+@import "contacts.sass"
+
 body
 	background-color: #f7f7f7
 	font-family: "Roboto", sans-serif
@@ -59,7 +61,7 @@ h5
 	background-color: #dfdfdf
 	&__menu
 		display: grid
-		grid-template-columns: repeat(3, 1fr)
+		grid-template-columns: repeat(4, 1fr)
 		// justify-content: space-around
 
 		font-size: 20px
@@ -69,6 +71,10 @@ h5
 		text-align: center
 		padding: 0 4vw
 		// transition: 0.3s
+
+		& .active
+			background-color: #444
+			color: #fff
 
 		& a
 			align-self: center
