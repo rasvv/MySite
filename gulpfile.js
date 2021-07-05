@@ -2,6 +2,9 @@
 let project_folder = require("path").basename(__dirname);
 let source_folder = "#src";
 
+const {task}= require('gulp');
+const ghPages = require('gulp-gh-pages');
+
 let fs = require('fs');
 
 let path = {
@@ -199,6 +202,8 @@ function clean(params) {
 
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
+
+task('deploy', () => src('./dist/**/*').pipe(ghPages()));
 
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
