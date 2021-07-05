@@ -7,8 +7,10 @@ const clearActiveClasses = () => {
 }
 
 menuitems.forEach((item) => {
-	item.addEventListener('click', () => {
+	item.addEventListener('click', (evnt) => {
+
 		clearActiveClasses()
 		item.classList.add('active')
+		// event.preventDefault()
 	})
 })
